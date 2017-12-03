@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.abhishek.rajasthane_paryatanam.Setting"
+android:background="@drawable/paper_back"
+android:paddingLeft="120dp"
+android:paddingRight="120dp">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ip_add"
+    android:layout_above="@+id/img_path"
+    android:hint="IP Address..."
+    android:layout_alignParentEnd="true"
+    android:padding="10dp"
+    android:textColor="#0b06fa"
+    android:textStyle="bold|italic"
+    android:textSize="20sp"
+    android:gravity="center" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/img_path"
+    android:hint="Enter Image Folder Path"
+    android:layout_above="@+id/video_path"
+    android:layout_alignParentStart="true"
+    android:padding="10dp"
+    android:textColor="#0b06fa"
+    android:textStyle="bold|italic"
+    android:textSize="20sp"
+    android:gravity="center" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/video_path"
+    android:hint="Enter Video Folder Path"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true"
+    android:padding="10dp"
+    android:textColor="#0b06fa"
+    android:textStyle="bold|italic"
+    android:textSize="20sp"
+    android:gravity="center" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SET PATH"
+    android:id="@+id/set"
+    android:layout_below="@+id/video_path"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="41dp" />
+
+</RelativeLayout>

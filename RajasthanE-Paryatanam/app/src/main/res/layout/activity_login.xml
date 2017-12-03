@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/login_back_page"
+tools:context="com.example.abhishek.rajasthane_paryatanam.LoginActivity"
+android:paddingTop="70dp"
+android:gravity="center">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/textView4"
+            android:layout_gravity="center"
+            android:textColor="#f34b0404"
+            android:textStyle="bold|italic"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email (xyz@gmail.com)"
+            android:id="@+id/etname"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password (8 chars minimum)"
+            android:id="@+id/etpass"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT LANGUAGE"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/ttcat"
+                android:textColor="#f34b0404"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/spinner_lang"
+                android:background="@color/colorPrimary"
+                android:popupBackground="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/ttcat"
+                android:textColor="#f34b0404"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btlogin"
+            android:textColor="#f34b0404"
+            android:background="@drawable/login_btn"
+            android:text="LOGIN"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do not have Account, SignUp..! Here"
+            android:id="@+id/ttsignup"
+            android:gravity="center"
+            android:onClick="OnSignup"
+            android:textColor="#f34b0404"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

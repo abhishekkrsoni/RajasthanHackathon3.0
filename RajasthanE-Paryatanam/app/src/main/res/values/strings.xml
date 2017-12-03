@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RajasthanE-Paryatanam</string>
+    <string name="select_language">Select Language</string>
+    <string-array name="array_language_name">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Japanese</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>
